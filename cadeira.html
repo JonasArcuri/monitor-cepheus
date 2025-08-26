@@ -1,0 +1,472 @@
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-green.min.css" />
+<style type="text/css">
+    :root {
+        /* IMAGEM FILETE DESKTOP */
+        --filete-desktop: url('https://hotsite.pichau.com.br/descricao/produtos/filete-cadeira.png');
+        /* IMAGEM FILETE MOBILE */
+        --filete-mobile: url('https://hotsite.pichau.com.br/descricao/produtos/filete-mobile.png');
+        /* THUMBNAIL VIDEO 1 */
+        --thumb-video1: url('https://hotsite.pichau.com.br/descricao/videos/pichau/PG-ANV-C17.jpg');
+        /* THUMBNAIL VIDEO 2 */
+        --thumb-video2: url('https://hotsite.pichau.com.br/descricao/videos/Mancer/unboxing-harpy.jpg');
+        /* BANNER IMAGEM DO PRIMEIRO BLOCO */
+        --banner-principal: url('https://hotsite.pichau.com.br/descricao/mancer/MCR-SKR-BP01/MCR-SKR-BP01.jpg');
+        /* ICONE 1 */
+        --icone-1: url('https://hotsite.pichau.com.br/descricao/produtos/confortov2.svg');
+        /* ICONE 2 */
+        --icone-2: url('https://hotsite.pichau.com.br/descricao/produtos/acabamento.svg');
+        /* ICONE 2 */
+        --icone-3: url('https://hotsite.pichau.com.br/descricao/produtos/mecanismo.svg');
+        /* ICONE 3 */
+        --icone-4: url('https://hotsite.pichau.com.br/descricao/produtos/angulo.svg');
+        /* ICONE 4 */
+        --icone-5: url('https://hotsite.pichau.com.br/descricao/produtos/medidas.svg');
+        /* ICONE 5 */
+        --icone-6: url('https://hotsite.pichau.com.br/descricao/produtos/material.svg');
+        /* ICONE 7 */
+        --icone-7: url('https://hotsite.pichau.com.br/descricao/produtos/base.svg');
+        /* ICONE 8 */
+        --icone-8: url('https://hotsite.pichau.com.br/descricao/produtos/braco.svg');
+        /* ICONE 9 */
+        --icone-9: url('https://hotsite.pichau.com.br/descricao/produtos/almofada.svg');
+        /* STORIE 1 */
+        --storie-1: url('https://hotsite.pichau.com.br/descricao/mancer/MCR-SKR-BP01/MCR-SKR-BP012.jpg');
+        /* STORIE 2 */
+        --storie-2: url('https://hotsite.pichau.com.br/descricao/mancer/MCR-SKR-BP01/MCR-SKR-BP013.jpg');
+        /* STORIE 3 */
+        --storie-3: url('https://hotsite.pichau.com.br/descricao/mancer/MCR-SKR-BP01/MCR-SKR-BP014.jpg');
+        /* STORIE 4 */
+        --storie-4: url('https://hotsite.pichau.com.br/descricao/mancer/MCR-SKR-BP01/MCR-SKR-BP015.jpg');
+    }
+
+    .filete-desktop {
+        content: var(--filete-desktop);
+    }
+
+    .filete-mobile {
+        content: var(--filete-mobile);
+    }
+
+    .thumb-video1 {
+        content: var(--thumb-video1);
+    }
+
+    .thumb-video2 {
+        content: var(--thumb-video2);
+    }
+
+    .banner-principal {
+        content: var(--banner-principal);
+    }
+
+    .icone-1 {
+        content: var(--icone-1);
+        width: 80px;
+    }
+
+    .icone-2 {
+        content: var(--icone-2);
+        width: 80px;
+    }
+
+    .icone-3 {
+        content: var(--icone-3);
+        width: 80px;
+    }
+
+    .icone-4 {
+        content: var(--icone-4);
+        width: 80px;
+    }
+
+    .icone-5 {
+        content: var(--icone-5);
+        width: 80px;
+    }
+
+    .icone-6 {
+        content: var(--icone-6);
+        width: 80px;
+    }
+
+    .icone-7 {
+        content: var(--icone-7);
+        width: 80px;
+    }
+
+    .icone-8 {
+        content: var(--icone-8);
+        width: 80px;
+    }
+
+    .icone-9 {
+        content: var(--icone-9);
+        width: 80px;
+    }
+
+    @media (max-width: 839px) {
+        .desktop {
+            display: none;
+        }
+
+        .storie-inside,
+        .storie-inside2,
+        .storie-inside3,
+        .storie-inside4 {
+            padding-top: 20em;
+        }
+    }
+
+    @media (min-width: 840px) {
+
+        .thumb-video1,
+        .thumb-video2 {
+            width: 100%
+        }
+
+        .adapt {
+            margin: 0px -16px 0px -16px;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        #videos {
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+
+        .video2img {
+            float: right;
+        }
+
+        .txt-intro {
+            margin: auto;
+            padding-right: 2em;
+        }
+
+        .storie-inside,
+        .storie-inside2,
+        .storie-inside3,
+        .storie-inside4 {
+            padding-top: 40em;
+        }
+    }
+
+    .previewvideo {
+        opacity: 1;
+        transition-duration: 0.4s;
+    }
+
+    .previewvideo:hover {
+        opacity: 0.8;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .filete {
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .videosint {
+        align-items: center;
+    }
+
+    #videos {
+        color: white;
+        background-image: url("https://hotsite.pichau.com.br/descricao/produtos/bg-videos-4.png");
+        background-size: cover;
+        background-position: center;
+        background-color: #e90313;
+        border-radius: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 3em;
+        text-justify: inter-word;
+    }
+
+    #videos h3 {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1em;
+        margin: 8px 0px 8px 0px !important;
+    }
+
+    #videos p {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+    #intro {
+        padding: 3em 0em 3em 0em;
+    }
+
+    #intro h3 {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+    #cards {}
+
+    #cards h3 {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    #cards p {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+    .cards-inside {
+        padding: 40px 30px 40px 30px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
+
+    #highlights {
+        text-align: center;
+    }
+
+    #highlights img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #highlights h3 {
+        font-weight: bold;
+        font-size: 3em;
+    }
+
+    #highlights h4 {
+        font-size: 1.8em;
+    }
+
+    #highlights p {
+        font-size: 1.2em;
+    }
+
+    #highlights div {
+        padding: 2em 1em 2em 1em
+    }
+
+    .highlights-inside {}
+
+    #storie {}
+
+    .storie-inside {
+        background-color: red;
+        background-image: var(--storie-1);
+        background-size: cover;
+        border-radius: 15px;
+        transition: 0.5s ease-out;
+    }
+
+    .storie-inside:hover {
+        background-blend-mode: multiply;
+        transition: all 1s;
+        opacity: .6;
+    }
+
+    .storie-inside2 {
+        background-color: red;
+        background-image: var(--storie-2);
+        background-size: cover;
+        border-radius: 15px;
+        transition: 0.5s ease-out;
+    }
+
+    .storie-inside2:hover {
+        background-blend-mode: multiply;
+        transition: all 1s;
+        opacity: .6;
+    }
+
+    .storie-inside3 {
+        background-color: red;
+        background-image: var(--storie-3);
+        background-size: cover;
+        border-radius: 15px;
+        transition: 0.5s ease-out;
+    }
+
+    .storie-inside3:hover {
+        background-blend-mode: multiply;
+        transition: all 1s;
+        opacity: .6;
+    }
+
+    .storie-inside4 {
+        background-color: red;
+        background-image: var(--storie-4);
+        background-size: cover;
+        border-radius: 15px;
+        transition: 0.5s ease-out;
+    }
+
+    .storie-inside4:hover {
+        background-blend-mode: multiply;
+        transition: all 1s;
+        opacity: .6;
+    }
+
+    #highlights2 {
+        text-align: center;
+    }
+
+    #highlights2 h3 {
+        font-weight: bold;
+        font-size: 1.8em;
+        color: #e90313;
+    }
+
+    #highlights2 p {
+        font-size: 1.2em;
+    }
+</style>
+
+<section id="avisos">
+    <div class="mdl-grid adapt">
+        <div class="mdl-cell mdl-cell--12-col desktop">
+            <a target="_blank"
+                href="https://www.pichauarena.com.br/redacao/entenda-tudo-sobre-uma-cadeira-gamer-com-a-linha-da-pichau/">
+                <img class="filete-desktop filete">
+            </a>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col mobile">
+            <a target="_blank"
+                href="https://www.pichauarena.com.br/redacao/entenda-tudo-sobre-uma-cadeira-gamer-com-a-linha-da-pichau/">
+                <img class="filete-mobile filete">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="videos">
+    <div class="mdl-grid videosint">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+            <img class="img-fluid" src="https://hotsite.pichau.com.br/descricao/produtos/icon-videos.png" />
+            <h3>Saiba mais sobre esse produto</h3>
+            <p>Veja nossos vídeos relacionados a esse produto e fique por dentro de todas as configurações e novidades.
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet"></div>
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+            <a href="https://youtu.be/E0sfk6zcdeU" target="_blank">
+                <img class="img-fluid previewvideo thumb-video1" />
+            </a>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col mdl-cell--12-col-tablet"></div>
+    </div>
+</section> -->
+
+<section id="intro">
+    <div class="mdl-grid adapt">
+        <div class="mdl-cell mdl-cell--6-col txt-intro">
+            <h3>Cadeira Mancer Sektor, Preta e roxa</h3>
+            <p>Forjada para unir tecnologia e resistência, a Cadeira Gamer Mancer Sektor é o trono perfeito para quem
+                exige ergonomia, estilo e desempenho no dia a dia! Inspirada em um design moderno e versátil, ela foi
+                criada para jogadores, estudantes e criadores que encaram longas jornadas diante da tela. Com linhas
+                sofisticadas, acabamento funcional e conforto otimizado, a Sektor garante que cada momento seja
+                aproveitado ao máximo.
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+            <img alt="Pichau Donek Pro" class="img-fluid filete banner-principal">
+        </div>
+    </div>
+</section>
+
+<section id="cards">
+    <div class="mdl-grid adapt">
+        <div class="mdl-cell mdl-cell--4-col cards-inside">
+            <img alt="Ícone de uma pena, relativo ao conforto" class="img-fluid icone-1" style="width:40px">
+            <h3>CONFORTO</h3>
+            <p>Com assento produzido em espuma nova combinada com espuma reciclada, a Mancer Sektor equilibra firmeza e
+                maciez na medida certa para longas horas de uso. O encosto em tela (mesh) com couro PVC permite maior
+                respirabilidade, evitando o acúmulo de calor, enquanto o apoio de braço com movimento sincronizado
+                acompanha seus movimentos, mantendo sua postura sempre no ponto ideal!
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col cards-inside">
+            <img alt="Ícone de um diamante relativo ao acabamento" class="img-fluid icone-2" style="width:40px">
+            <h3>ACABAMENTO</h3>
+            <p>Com estrutura em polipropileno e fibra de vidro, a Mancer Sektor alia leveza e resistência. A base de
+                nylon preto de 700 mm garante estabilidade para o uso diário, e seu revestimento em tela respirável
+                (mesh) e couro PVC não só aumenta a durabilidade, mas também traz um visual moderno que combina
+                perfeitamente com setups gamers e profissionais!
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col cards-inside">
+            <img alt="Ícone de uma engrenagem relativo ao mecanismo" class="img-fluid icone-3" style="width:40px">
+            <h3>MECANISMO</h3>
+            <p>A Mancer Sektor conta com um mecanismo com reclinação plana, permitindo inclinação suave e natural do
+                encosto. Sua altura ajustável entre 1150 mm e 1210 mm se adapta facilmente a diferentes usuários e
+                mesas, enquanto o pistão a gás classe 3 assegura segurança e durabilidade. Com rodízios de nylon de 60
+                mm, o deslocamento é estável e silencioso, ideal para manter a fluidez do seu espaço!
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="highlights">
+    <div class="mdl-grid adapt">
+        <div class="mdl-cell mdl-cell--12-col">
+            <h3>Características</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col highlights-inside">
+            <img alt="Ícone representando o ângulo de inclinação da cadeira" class="img-fluid icone-4">
+            <h4>Ângulo</h4>
+            <p>A cadeira Mancer Sektor conta com encosto reclinável de 90° - 130° pra você ajustar da forma que achar
+                melhor. </p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+            <img alt="Ícone com os materiais que compõem a cadeira" class="img-fluid icone-6">
+            <h4>Materiais</h4>
+            <p> Base em metálica e rodas de PU de 60mm. </p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col highlights-inside">
+            <img alt="Ícone com a base" class="img-fluid icone-7">
+            <h4>Base</h4>
+            <p>Sua Base de nylon preto de 700mm, que mais uma vez reforça sua durabilidade por ser um material de alto
+                nível.
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col highlights-inside">
+            <img alt="Ícone com os braços da cadeira" class="img-fluid icone-8">
+            <h4>Braços</h4>
+            <p> Apoio de braço com movimento sincronizado e superfície em espuma.
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+            <img alt="Ícone da almofada" class="img-fluid icone-9">
+            <h4>Almofada</h4>
+            <p>Este modelo acompanha almofada de suporte de cabeça e lombar. </p>
+        </div>
+    </div>
+</section>
+
+<section id="storie">
+    <div class="mdl-grid adapt">
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone storie-inside">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone storie-inside2">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone storie-inside3">
+        </div>
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone storie-inside4">
+        </div>
+    </div>
+</section>
